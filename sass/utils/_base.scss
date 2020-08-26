@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: $background-color;
+  color: $primary-text-color;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+}
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.conteiner-center {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button {
+  font-family: inherit;
+}
+.section-titlle {
+  color: $title-color;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.text {
+  font-style: 400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+}
+.element {
+  color: $title-color;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.title {
+  color: $background-color;
+  background: rgba(47, 48, 58, 0.8);
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}

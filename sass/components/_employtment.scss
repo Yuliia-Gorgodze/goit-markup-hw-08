@@ -1,0 +1,32 @@
+.employtment {
+  display: flex;
+  width: 1170px;
+  justify-content: space-between;
+  padding-left: 0px;
+  &-conteiner {
+    width: 370px;
+  }
+}
+.pictures-svg {
+  display: block;
+}
+.title-employment {
+  position: relative;
+  top: -70px;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding-top: 27px;
+  color: $background-color;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  font-family: $font-family-base;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

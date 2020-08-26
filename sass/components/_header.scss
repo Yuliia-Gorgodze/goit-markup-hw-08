@@ -1,0 +1,128 @@
+.web-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-element {
+  margin-left: 50px;
+  position: relative;
+  height: 100%;
+  &:first-child {
+    margin-left: 85px;
+  }
+  &:hover .link::after,
+  &:focus .link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(28px);
+    height: 4px;
+    width: 100%;
+
+    background-color: $hover-color;
+    border-radius: 2px;
+  }
+}
+.nav-container {
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+}
+.header {
+  max-width: 1600px;
+  border: 1px solid #ececec;
+  border-left: none;
+  border-right: none;
+  margin-right: auto;
+  margin-left: auto;
+  &-nav {
+    display: flex;
+    width: 570px;
+    align-items: center;
+  }
+}
+.contacts-conteiner {
+  display: flex;
+  width: 370px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 0;
+  margin: 0;
+  padding: 0;
+  & .contact {
+    text-decoration: none;
+    color: $primary-text-color;
+    font-family: $font-family-base;
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  & .contact:hover,
+  & .contact:focus {
+    color: $hover-color;
+  }
+}
+.contact {
+  display: flex;
+  align-items: center;
+  fill: $primary-text-color;
+  &:hover,
+  &:focus {
+    fill: $hover-color;
+  }
+}
+.e-mail {
+  width: 16px;
+  height: 17.2px;
+  margin-right: 10px;
+}
+.web {
+  color: $hover-color;
+  &-tittle {
+    color: $title-color;
+    text-decoration: none;
+    font-family: $font-family-secondary;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+.mail-container {
+  display: flex;
+}
+.current {
+  color: #2196f3;
+  &-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(28px);
+    height: 4px;
+    width: 100%;
+    background-color: $hover-color;
+    border-radius: 2px;
+  }
+}
+.link {
+  color: var(--title-color);
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-family-base;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  height: 100%;
+  &:focus,
+  &:hover {
+    color: $hover-color;
+  }
+}

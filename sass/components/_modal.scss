@@ -1,0 +1,184 @@
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+.is-hiden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 581px;
+  width: 528px;
+  padding: 40px;
+  background-color: $background-color;
+}
+.clouse-button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $background-color;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  --color3: rgba(0, 0, 0, 0.1);
+  &:focus svg {
+    --color2: var(--hover-color);
+    --color3: rgba(0, 0, 0, 0.1);
+  }
+}
+.comment {
+  margin-bottom: 20px;
+  &-text {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -25px;
+  }
+  &-block {
+    width: 448px;
+    height: 120px;
+    padding: 16px;
+  }
+}
+.name,
+.email,
+.tel {
+  display: block;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 28px;
+  padding-left: 42px;
+  padding-right: 16px;
+}
+.name:focus,
+.email:focus,
+.tel:focus,
+.comment-block:focus {
+  outline-color: $hover-color;
+
+  border: 1px;
+  border-radius: 4px;
+}
+.comment-block:focus::placeholder {
+  color: $hover-color;
+}
+.name-text,
+.mail-text,
+.tel-text,
+.comment {
+  display: block;
+  position: relative;
+}
+.checkbox {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+}
+.check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+.checkbox:checked + .check-icon {
+  background-color: $hover-color;
+  background-image: url(../img/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $hover-color;
+}
+.button-submit {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: $hover-color;
+  color: $background-color;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  width: 200px;
+  height: 50px;
+}
+.text-form {
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+.modal-heading {
+  margin-bottom: 30px;
+
+  display: block;
+  width: 448px;
+  font-family: $font-family-base;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: black;
+}
+.modal-svg {
+  position: absolute;
+  display: block;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+}
+.name:focus + .modal-svg,
+.tel:focus + .modal-svg,
+.email:focus + .modal-svg {
+  fill: $hover-color;
+}
+.consent {
+  color: var(--hover-color);
+  &-block {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-left: 12px;
+  }
+}
