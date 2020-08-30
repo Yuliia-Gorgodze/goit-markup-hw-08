@@ -19,27 +19,26 @@
     <!--Шапка сайта-->
     <header>
       <div class="conteiner-center web-container">
-        <div>
-          <nav class="header-nav">
-            <a class="web-tittle" href="./index.html">
-              <span class="web">Web</span> Studio</a
-            >
-            <ul class="nav-container list">
-              <li class="nav-element">
-                <a href="./index.html" class="link current current-link"
-                  >Студия</a
-                >
-              </li>
+        <nav class="header-nav">
+          <a class="web-tittle" href="./index.html">
+            <span class="web">Web</span> Studio</a
+          >
 
-              <li class="nav-element">
-                <a href="./portfolio.html" class="link">Портфолио</a>
-              </li>
-              <li class="nav-element">
-                <a href="" class="link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          <ul class="nav-container list">
+            <li class="nav-element">
+              <a href="./index.html" class="link current current-link"
+                >Студия</a
+              >
+            </li>
+
+            <li class="nav-element">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="nav-element">
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="contacts-conteiner">
           <li class="mail-container">
             <a href="mailto:info@devstudio.com" class="contact">
@@ -50,7 +49,7 @@
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="contact nav-element">
+            <a href="tel:+380961111111" class="contact nav-telefone">
               <svg class="e-mail">
                 <use href="./img/sprite.svg#icon-kontakt"></use>
               </svg>
@@ -58,6 +57,23 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="icon-menu"
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" href="./img/sprite.svg#menu-close"></use>
+            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -141,9 +157,7 @@
                   <a href=" " class="consent">Условия договора</a>
                 </label>
 
-                <button class="button-submit" href="">
-                  Отправить
-                </button>
+                <button class="button-submit" href="">Отправить</button>
               </div>
             </div>
           </div>
@@ -176,7 +190,7 @@
                 </svg>
               </div>
             </div>
-            <h3 class="element">пунктуальность</h3>
+            <h3 class="element">Пунктуальность</h3>
             <p class="text">
               Задача организации, в особенности же рамки и место обучение кадров
               влечет за собой.
@@ -213,9 +227,8 @@
         </ul>
       </section>
       <!--чем мы занимаемся-->
-      <section class="section conteiner-center">
+      <section class="section conteiner-center employtment-none">
         <h2 class="section-titlle">Чем мы занимаемся</h2>
-
         <ul class="employtment">
           <div class="employtment-conteiner">
             <li>
@@ -261,7 +274,7 @@
             <ul class="our-container">
               <li class="our-content">
                 <div class="our-element">
-                  <img src="./img/igor.jpg" alt="nikolai" width="270" />
+                  <img class="img-block" src="./img/igor.jpg" alt="nikolai" />
                   <h3 class="contents">Игорь Демьяненко</h3>
                   <p class="text-contents">Product Designer</p>
                 </div>
@@ -298,7 +311,7 @@
               </li>
               <li class="our-content">
                 <div class="our-element">
-                  <img src="./img/olga.jpg" alt="olga" width="270" />
+                  <img class="img-block" src="./img/olga.jpg" alt="olga" />
                   <h3 class="contents">Ольга Репина</h3>
                   <p class="text-contents">Frontend Developer</p>
                 </div>
@@ -335,7 +348,7 @@
               </li>
               <li class="our-content">
                 <div class="our-element">
-                  <img src="./img/nikolai.jpg" alt="andrei" width="270" />
+                  <img class="img-block" src="./img/nikolai.jpg" alt="andrei" />
                   <h3 class="contents">Николай Тарасов</h3>
                   <p class="text-contents">Marketing</p>
                 </div>
@@ -372,7 +385,7 @@
               </li>
               <li class="our-content">
                 <div class="our-element">
-                  <img src="./img/mihail.jpg" alt="ivan" width="270" />
+                  <img class="img-block" src="./img/mihail.jpg" alt="ivan" />
                   <h3 class="contents">Михаил Ермаков</h3>
                   <p class="text-contents">UI Designer</p>
                 </div>
@@ -467,68 +480,68 @@
     <!--подвал страницы-->
     <footer class="footer">
       <div class="conteiner-center footer-container">
-        <div class="footer-content">
-          <a class="web-tittle" href="./index.html">
-            <span class="web">Web</span>
-            <span class="web-studio">Studio</span></a
-          >
-          <div class="footer-adress">
-            <address>
-              <span class="adress">
-                г. Киев,пр-т Леси Украинки,26
-              </span>
-            </address>
+        <div class="footer-flex">
+          <div class="footer-content">
+            <a class="web-tittle" href="./index.html">
+              <span class="web">Web</span>
+              <span class="web-studio">Studio</span></a
+            >
+            <div class="footer-adress">
+              <address>
+                <span class="adress"> г. Киев,пр-т Леси Украинки,26 </span>
+              </address>
+            </div>
+            <ul class="footer-contacts">
+              <li class="footer-element">
+                <a href="mailto:info@devstudio.com" class="mail-footer"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-element">
+                <a href="tel:+380961111111" class="contact-footer"
+                  >+380961111111</a
+                >
+              </li>
+            </ul>
           </div>
-          <ul class="footer-contacts">
-            <li class="footer-element">
-              <a href="mailto:info@devstudio.com" class="mail-footer"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="footer-element">
-              <a href="tel:+380961111111" class="contact-footer"
-                >+380961111111</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-join">
-          <p class="join">Присоеденяйтесь</p>
-          <ul class="social-footer">
-            <li class="join-element">
-              <a href="">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-element">
-              <a href="">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-element">
-              <a href="">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-element">
-              <a href="">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./img/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="footer-join">
+            <p class="join">Присоеденяйтесь</p>
+            <ul class="social-footer">
+              <li class="join-element">
+                <a href="">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-element">
+                <a href="">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-element">
+                <a href="">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-element">
+                <a href="">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-sign">
           <span class="sign-text"> подпишитесь на рассылку</span>
-          <div>
-            <label>
+          <div class="email-flex">
+            <label class="sing-label">
               <input
                 type="email"
                 name="email"
@@ -536,12 +549,13 @@
                 class="sign"
               />
             </label>
-            <div class="email-container">
-              <button class="footer-button" href="">Подписаться</button>
+
+            <button class="footer-button" href="">
+              Подписаться
               <svg class="icon-send" width="24" height="24">
                 <use href="./img/sprite.svg#icon-send"></use>
               </svg>
-            </div>
+            </button>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
 }
-
+/*480px, 768px и 1200px*/
 *,
 *::before,
 *::after {
@@ -18,9 +18,10 @@ ul {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 .conteiner-center {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -43,8 +44,12 @@ ul {
   margin-bottom: 50px;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .text {
   font-style: 400;
@@ -63,6 +68,10 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and(min-width: 768px) {
+    text-align: left;
+  }
 }
 .title {
   color: $background-color;
@@ -72,4 +81,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+.img-block {
+  display: block;
 }

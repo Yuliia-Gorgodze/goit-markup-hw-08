@@ -1,18 +1,27 @@
 .web-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   list-style: none;
   padding-top: 25px;
   padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .nav-element {
   margin-left: 50px;
   position: relative;
   height: 100%;
-  &:first-child {
-    margin-left: 85px;
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-left: 80px;
+    }
   }
   &:hover .link::after,
   &:focus .link::after {
@@ -22,58 +31,88 @@
     transform: translateY(28px);
     height: 4px;
     width: 100%;
-
     background-color: $hover-color;
     border-radius: 2px;
   }
+  @media screen and (min-width: 1200px) {
+    &:first-child {
+      margin-left: 85px;
+    }
+  }
+}
+.nav-telefone {
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 .nav-container {
-  display: flex;
-  padding-left: 0;
-  align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+  }
 }
 .header {
-  max-width: 1600px;
   border: 1px solid #ececec;
   border-left: none;
   border-right: none;
   margin-right: auto;
   margin-left: auto;
-  &-nav {
-    display: flex;
-    width: 570px;
-    align-items: center;
+  @media screen and (min-width: 768px) {
+    &-nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &-nav {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 .contacts-conteiner {
-  display: flex;
-  width: 370px;
-  align-items: center;
-  justify-content: flex-end;
-  padding-left: 0;
-  margin: 0;
-  padding: 0;
-  & .contact {
-    text-decoration: none;
-    color: $primary-text-color;
-    font-family: $font-family-base;
-    font-style: 400;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-  & .contact:hover,
-  & .contact:focus {
-    color: $hover-color;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
   }
 }
+
 .contact {
   display: flex;
   align-items: center;
   fill: $primary-text-color;
+  text-decoration: none;
+  color: $primary-text-color;
+  font-family: $font-family-base;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
   &:hover,
   &:focus {
+    color: $hover-color;
     fill: $hover-color;
   }
 }
@@ -95,23 +134,32 @@
   }
 }
 .mail-container {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .current {
   color: #2196f3;
-  &-link::after {
-    content: "";
-    display: block;
-    position: absolute;
-    transform: translateY(28px);
-    height: 4px;
-    width: 100%;
-    background-color: $hover-color;
-    border-radius: 2px;
+  @media screen and (min-width: 768px) {
+    &-link::after {
+      content: "";
+      display: block;
+      position: absolute;
+      transform: translateY(35px);
+      height: 4px;
+      width: 100%;
+      background-color: $hover-color;
+      border-radius: 2px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &-link::after {
+      transform: translateY(28px);
+    }
   }
 }
 .link {
-  color: var(--title-color);
+  color: $title-color;
   text-decoration: none;
   display: inline-block;
   font-family: $font-family-base;
@@ -125,4 +173,23 @@
   &:hover {
     color: $hover-color;
   }
+}
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
 }

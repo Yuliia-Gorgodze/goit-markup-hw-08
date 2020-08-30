@@ -1,6 +1,5 @@
 .employtment {
   display: flex;
-  width: 1170px;
   justify-content: space-between;
   padding-left: 0px;
   &-conteiner {
@@ -29,4 +28,9 @@
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.employtment-none {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
