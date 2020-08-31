@@ -20,6 +20,20 @@ ul {
   margin-bottom: 0;
   padding: 0;
 }
+header {
+  @media screen and(max-width: 767px) {
+    position: relative;
+  }
+  min-height: 80px;
+  border: 1px solid #ececec;
+  border-left: none;
+  border-right: none;
+  @media screen and(min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 .conteiner-center {
   max-width: 1200px;
   padding-left: 15px;
