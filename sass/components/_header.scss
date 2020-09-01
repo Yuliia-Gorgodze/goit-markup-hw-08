@@ -10,6 +10,7 @@
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    left: 0;
     border: 1px solid #ececec;
     border-left: none;
     border-right: none;
@@ -52,15 +53,22 @@
     content: "";
     display: block;
     position: absolute;
-    transform: translateY(28px);
+
     height: 4px;
     width: 100%;
     background-color: $hover-color;
     border-radius: 2px;
-  }
-  @media screen and (min-width: 1200px) {
-    &:first-child {
-      margin-left: 85px;
+    @media screen and (min-width: 480px) {
+      transform: translateY(8px);
+    }
+    @media screen and (min-width: 768px) {
+      transform: translateY(38px);
+    }
+    @media screen and (min-width: 1200px) {
+      transform: translateY(28px);
+      &:first-child {
+        margin-left: 85px;
+      }
     }
   }
 }
@@ -109,6 +117,7 @@
   }
   @media screen and (min-width: 768px) {
     flex-direction: column;
+    margin-left: 70px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
@@ -125,7 +134,7 @@
   text-decoration: none;
   color: $primary-text-color;
   font-family: $font-family-base;
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -155,7 +164,7 @@
     color: $title-color;
     text-decoration: none;
     font-family: $font-family-secondary;
-    font-style: 400;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.15;
@@ -176,7 +185,7 @@
   color: $title-color;
   text-decoration: none;
   font-family: $font-family-secondary;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.15;
@@ -191,12 +200,33 @@
 }
 .current {
   color: #2196f3;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-family-base;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) {
+    &-link::after {
+      content: "";
+      display: block;
+      position: absolute;
+      transform: translateY(8px);
+      height: 4px;
+      width: 100%;
+      background-color: $hover-color;
+      border-radius: 2px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     &-link::after {
       content: "";
       display: block;
       position: absolute;
-      transform: translateY(35px);
+      transform: translateY(38px);
       height: 4px;
       width: 100%;
       background-color: $hover-color;
@@ -214,7 +244,7 @@
   text-decoration: none;
   display: inline-block;
   font-family: $font-family-base;
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -224,6 +254,10 @@
   &:hover {
     color: $hover-color;
   }
+}
+.menu:hover,
+.menu:focus {
+  fill: $hover-color;
 }
 .menu-button {
   position: absolute;

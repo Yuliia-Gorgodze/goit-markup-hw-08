@@ -24,7 +24,7 @@
   border-radius: 4px;
   background-color: $hover-color;
   color: $background-color;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -41,13 +41,29 @@
   margin-right: auto;
   background-image: linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
-    url(../img/hero.jpg);
+    url(../img/new/hero/hero-mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media screen and(min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/new/hero/hero-tablet.jpg);
+  }
+  @media screen and(min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/new/hero/hero-computer.jpg);
+  }
 }
 .section-efect {
   padding-top: 118px;

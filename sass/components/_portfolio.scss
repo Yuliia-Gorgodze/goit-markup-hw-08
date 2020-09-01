@@ -1,7 +1,7 @@
 .background-button {
   background-color: $background-button;
   color: $title-color;
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -128,7 +128,7 @@
 }
 .portfolio-tittle {
   color: $title-color;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -143,7 +143,7 @@
   display: block;
 }
 .portfolio-element {
-  font-style: 400;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -159,7 +159,7 @@
   top: 0;
   position: absolute;
   transform: translateY(100%);
-  font-style: 400;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;

@@ -39,7 +39,7 @@
   text-decoration: none;
   color: $primary-text-color;
   font-family: $font-family-base;
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -53,7 +53,7 @@
   text-decoration: none;
   color: $primary-text-color;
   font-family: $font-family-base;
-  font-style: 400;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -84,7 +84,7 @@
 }
 .join {
   text-transform: uppercase;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -94,7 +94,7 @@
   margin-top: 0;
 }
 .footer-tittle {
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -114,6 +114,9 @@
   margin-top: 20px;
 }
 .footer-sign {
+  @media screen and(max-width:767px) {
+    width: 100%;
+  }
   @media screen and(max-width:1199px) {
     display: flex;
     flex-direction: column;
@@ -131,7 +134,7 @@
   padding: 16px;
   height: 50px;
   &-text {
-    font-style: 400;
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -180,6 +183,7 @@
 .email-flex {
   display: flex;
   @media screen and(max-width:1199px) {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -192,7 +196,7 @@
   border-radius: 4px;
   background-color: $hover-color;
   color: $background-color;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;

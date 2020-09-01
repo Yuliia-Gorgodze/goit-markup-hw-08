@@ -32,10 +32,18 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  height: 581px;
-  width: 528px;
-  padding: 40px;
   background-color: $background-color;
+  width: 450px;
+  padding: 40px;
+  @media screen and(min-width: 768px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and(min-width: 1200px) {
+    height: 581px;
+    width: 528px;
+    padding: 40px;
+  }
 }
 .clouse-button {
   position: absolute;
@@ -63,20 +71,30 @@
     top: -25px;
   }
   &-block {
-    width: 448px;
-    height: 120px;
     padding: 16px;
+
+    height: 120px;
+    @media screen and(min-width: 768px) {
+      width: 370px;
+    }
+    @media screen and(min-width: 1200px) {
+      width: 448px;
+    }
   }
 }
 .name,
 .email,
 .tel {
   display: block;
-  width: 448px;
-  height: 40px;
   margin-bottom: 28px;
   padding-left: 42px;
   padding-right: 16px;
+  width: 370px;
+  height: 40px;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 .name:focus,
 .email:focus,
@@ -128,7 +146,7 @@
   border-radius: 4px;
   background-color: $hover-color;
   color: $background-color;
-  font-style: 400;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -147,17 +165,25 @@
 }
 .modal-heading {
   margin-bottom: 30px;
-
-  display: block;
-  width: 448px;
-  font-family: $font-family-base;
-  font-style: 400;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
+  line-height: 1.5;
+  width: 370px;
+  display: block;
+  width: 370px;
+  font-family: $font-family-base;
 
   color: black;
+  @media screen and(min-width: 1200px) {
+    width: 448px;
+    font-family: $font-family-base;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
 }
 .modal-svg {
   position: absolute;
@@ -174,11 +200,25 @@
   fill: $hover-color;
 }
 .consent {
-  color: var(--hover-color);
+  color: $hover-color;
+  @media screen and(max-width: 1199px) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+
   &-block {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
-    margin-left: 12px;
+    @media screen and(max-width: 1199px) {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+    }
   }
 }

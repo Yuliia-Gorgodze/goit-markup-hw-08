@@ -28,9 +28,7 @@
         <nav class="header-nav">
           <ul class="nav-container list">
             <li class="nav-element">
-              <a href="./index.html" class="link current current-link"
-                >Студия</a
-              >
+              <a href="./index.html" class="current current-link">Студия</a>
             </li>
 
             <li class="nav-element">
@@ -97,69 +95,71 @@
                     <use href="./img/sprite.svg#clouse"></use>
                   </svg>
                 </button>
-                <span class="modal-heading"
-                  >Оставьте свои данные, мы вам перезвоним</span
-                >
-                <label class="name-text">
-                  <span class="text-form">Имя</span>
-                  <input type="text" class="name" placeholder=" " />
-                  <svg class="modal-svg">
-                    <use
-                      href="./img/sprite.svg#person"
-                      width="18"
-                      height="18"
-                    ></use>
-                  </svg>
-                </label>
+                <form class="form-modal">
+                  <span class="modal-heading"
+                    >Оставьте свои данные, мы вам перезвоним</span
+                  >
+                  <label class="name-text">
+                    <span class="text-form">Имя</span>
+                    <input type="text" class="name" placeholder=" " />
+                    <svg class="modal-svg">
+                      <use
+                        href="./img/sprite.svg#person"
+                        width="18"
+                        height="18"
+                      ></use>
+                    </svg>
+                  </label>
 
-                <label class="tel-text">
-                  <span class="text-form">Телефон</span>
-                  <input type="text" class="tel" placeholder=" " />
-                  <svg class="modal-svg">
-                    <use
-                      href="./img/sprite.svg#phone"
-                      width="18"
-                      height="18"
-                    ></use>
-                  </svg>
-                </label>
+                  <label class="tel-text">
+                    <span class="text-form">Телефон</span>
+                    <input type="text" class="tel" placeholder=" " />
+                    <svg class="modal-svg">
+                      <use
+                        href="./img/sprite.svg#phone"
+                        width="18"
+                        height="18"
+                      ></use>
+                    </svg>
+                  </label>
 
-                <label class="mail-text">
-                  <span class="text-form">Почта</span>
-                  <input type="email" class="email" placeholder=" " />
-                  <svg class="modal-svg">
-                    <use
-                      href="./img/sprite.svg#email-black"
-                      width="18"
-                      height="18"
-                    ></use>
-                  </svg>
-                </label>
+                  <label class="mail-text">
+                    <span class="text-form">Почта</span>
+                    <input type="email" class="email" placeholder=" " />
+                    <svg class="modal-svg">
+                      <use
+                        href="./img/sprite.svg#email-black"
+                        width="18"
+                        height="18"
+                      ></use>
+                    </svg>
+                  </label>
 
-                <label class="comment">
-                  <span class="comment-text">Комментарий</span>
-                  <textarea
-                    name="comment"
-                    rows="5"
-                    cols="45"
-                    placeholder="Оставьте комментарий"
-                    class="comment-block"
-                  ></textarea>
-                </label>
+                  <label class="comment">
+                    <span class="comment-text">Комментарий</span>
+                    <textarea
+                      name="comment"
+                      rows="5"
+                      cols="45"
+                      placeholder="Оставьте комментарий"
+                      class="comment-block"
+                    ></textarea>
+                  </label>
 
-                <label class="consent-block">
-                  <input
-                    name="consent"
-                    type="checkbox"
-                    value="reading"
-                    class="checkbox"
-                  />
-                  <span class="check-icon"></span>
-                  Соглашаюсь с рассылой и принимаю
-                  <a href=" " class="consent">Условия договора</a>
-                </label>
+                  <label class="consent-block">
+                    <input
+                      name="consent"
+                      type="checkbox"
+                      value="reading"
+                      class="checkbox"
+                    />
+                    <span class="check-icon"></span>
+                    Соглашаюсь с рассылой и принимаю
+                    <a href=" " class="consent">Условия договора</a>
+                  </label>
 
-                <button class="button-submit" href="">Отправить</button>
+                  <button class="button-submit" href="">Отправить</button>
+                </form>
               </div>
             </div>
           </div>
@@ -276,7 +276,14 @@
             <ul class="our-container">
               <li class="our-content">
                 <div class="our-element">
-                  <img class="img-block" src="./img/igor.jpg" alt="nikolai" />
+                  <picture>
+                    <source srcset="./img/new/client/nikolay-2x.jpg 2x" />
+                    <img
+                      class="img-block"
+                      alt="Игорь"
+                      src="./img/new/client/nikolay-1x.jpg"
+                    />
+                  </picture>
                   <h3 class="contents">Игорь Демьяненко</h3>
                   <p class="text-contents">Product Designer</p>
                 </div>
@@ -313,7 +320,14 @@
               </li>
               <li class="our-content">
                 <div class="our-element">
-                  <img class="img-block" src="./img/olga.jpg" alt="olga" />
+                  <picture>
+                    <source srcset="./img/new/client/olga-2x.jpg 2x" />
+                    <img
+                      class="img-block"
+                      alt="Ольга"
+                      src="./img/new/client/olga-1x.jpg"
+                    />
+                  </picture>
                   <h3 class="contents">Ольга Репина</h3>
                   <p class="text-contents">Frontend Developer</p>
                 </div>
@@ -350,7 +364,14 @@
               </li>
               <li class="our-content">
                 <div class="our-element">
-                  <img class="img-block" src="./img/nikolai.jpg" alt="andrei" />
+                  <picture>
+                    <source srcset="./img/new/client/andrey-2x.jpg 2x" />
+                    <img
+                      class="img-block"
+                      alt="Николай"
+                      src="./img/new/client/andrey-1x.jpg"
+                    />
+                  </picture>
                   <h3 class="contents">Николай Тарасов</h3>
                   <p class="text-contents">Marketing</p>
                 </div>
@@ -387,7 +408,14 @@
               </li>
               <li class="our-content">
                 <div class="our-element">
-                  <img class="img-block" src="./img/mihail.jpg" alt="ivan" />
+                  <picture>
+                    <source srcset="./img/new/client/ivan-2x.jpg 2x" />
+                    <img
+                      class="img-block"
+                      alt="Михаил"
+                      src="./img/new/client/ivan-1x.jpg"
+                    />
+                  </picture>
                   <h3 class="contents">Михаил Ермаков</h3>
                   <p class="text-contents">UI Designer</p>
                 </div>
