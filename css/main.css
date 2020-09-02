@@ -595,8 +595,8 @@ header {
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/new/hero/hero-mobil.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/new/hero/hero-mobil.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/hero-mobil.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -604,15 +604,15 @@ header {
 
 @media screen and (min-width: 768px) {
   .background-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/new/hero/hero-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/new/hero/hero-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .background-hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/new/hero/hero-computer.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/new/hero/hero-computer.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero/hero-computer.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-computer.jpg);
   }
 }
 
@@ -1016,10 +1016,6 @@ header {
 
 .employtment-conteiner {
   width: 370px;
-}
-
-.pictures-svg {
-  display: block;
 }
 
 .title-employment {

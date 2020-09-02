@@ -234,35 +234,56 @@
         <ul class="employtment">
           <div class="employtment-conteiner">
             <li>
-              <img
-                class="pictures-svg"
-                src="./img/deskop.jpg"
-                alt="дескопные приложения"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/comp/section/section-one1x.jpg 1x,
+                    ./img/comp/section/section-one2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/сomp/section/section-one1x.jpg"
+                  alt="Дескопные приложения"
+                  class="img-block"
+                />
+              </picture>
               <p class="title-employment">Дескопные приложения</p>
             </li>
           </div>
 
           <div class="employtment-conteiner">
             <li>
-              <img
-                class="pictures-svg"
-                src="./img/mobil.jpg"
-                alt="мобильные приложения"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/comp/section/section-two1x.jpg 1x,
+                    ./img/comp/section/section-two2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/сomp/section/section-two1x.jpg"
+                  alt="Мобильные приложения"
+                  class="img-block"
+                />
+              </picture>
               <p class="title-employment">Мобильные приложения</p>
             </li>
           </div>
           <div class="employtment-conteiner">
             <li>
-              <img
-                class="pictures-svg"
-                src="./img/disayn.jpg"
-                alt="дизайнерские решения"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/comp/section/section-three1x.jpg 1x,
+                    ./img/comp/section/section-three2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/сomp/section/section-three1x.jpg"
+                  alt="Дизайнерские решения"
+                  class="img-block"
+                />
+              </picture>
               <p class="title-employment">Дизайнерские решения</p>
             </li>
           </div>
@@ -277,11 +298,31 @@
               <li class="our-content">
                 <div class="our-element">
                   <picture>
-                    <source srcset="./img/new/client/nikolay-2x.jpg 2x" />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/mobile/comand/mob-igor1x.jpg 1x,
+                        ./img/mobile/comand/mob-igor2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./img/tablet/comand/tablet-igor1x.jpg 1x,
+                        ./img/tablet/comand/tablet-igor2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/comp/comand/1x-computer-igor.jpg 1x,
+                        ./img/comp/comand/2x-computer-igor.jpg 2x
+                      "
+                    />
                     <img
+                      src="./img/comp/comand/1x-computer-igor.jpg"
+                      alt="Фото Игоря"
                       class="img-block"
-                      alt="Игорь"
-                      src="./img/new/client/nikolay-1x.jpg"
                     />
                   </picture>
                   <h3 class="contents">Игорь Демьяненко</h3>
