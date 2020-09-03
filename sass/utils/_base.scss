@@ -22,12 +22,16 @@ ul {
 }
 header {
   @media screen and(max-width: 767px) {
+    border: 1px solid #ececec;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+  @media screen and(max-width: 767px) {
     position: relative;
   }
   min-height: 80px;
-  border: 1px solid #ececec;
-  border-left: none;
-  border-right: none;
+
   @media screen and(min-width: 768px) {
     display: flex;
     align-items: center;
@@ -99,4 +103,12 @@ header {
 .img-block {
   display: block;
   width: 100%;
+}
+main {
+  @media screen and(min-width: 768px) {
+    border: 1px solid #ececec;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
 }

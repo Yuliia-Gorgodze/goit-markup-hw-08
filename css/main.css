@@ -31,9 +31,15 @@ ul {
 
 header {
   min-height: 80px;
-  border: 1px solid #ececec;
-  border-left: none;
-  border-right: none;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    border: 1px solid #ececec;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -135,6 +141,15 @@ header {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    border: 1px solid #ececec;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
 .web-container {
   list-style: none;
   padding-top: 25px;
@@ -155,6 +170,7 @@ header {
     border: 1px solid #ececec;
     border-left: none;
     border-right: none;
+    border-bottom: none;
     display: none;
   }
 }
