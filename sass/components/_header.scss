@@ -4,6 +4,7 @@
   padding-bottom: 25px;
   @media screen and (max-width: 767px) {
     top: 100%;
+    z-index: 1;
     position: absolute;
     background-color: $background-color;
     width: 100%;
