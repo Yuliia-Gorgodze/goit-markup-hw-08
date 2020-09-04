@@ -34,11 +34,16 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: $background-color;
-  width: 450px;
-  padding: 40px;
+  width: 320px;
+  padding: 16px;
+  @media screen and(min-width: 480px) {
+    width: 450px;
+    padding: 40px;
+    height: 609px;
+  }
+
   @media screen and(min-width: 768px) {
     width: 450px;
-    height: 609px;
   }
   @media screen and(min-width: 1200px) {
     height: 581px;
@@ -73,9 +78,9 @@
   }
   &-block {
     padding: 16px;
-
     height: 120px;
-    @media screen and(min-width: 768px) {
+    width: 288px;
+    @media screen and(min-width: 480px) {
       width: 370px;
     }
     @media screen and(min-width: 1200px) {
@@ -90,9 +95,12 @@
   margin-bottom: 28px;
   padding-left: 42px;
   padding-right: 16px;
-  width: 370px;
+  width: 288px;
   height: 40px;
 
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
@@ -170,12 +178,14 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 1.5;
-  width: 370px;
   display: block;
-  width: 370px;
   font-family: $font-family-base;
+  width: 288px;
+  color: $title-color;
+  @media screen and(min-width: 480px) {
+    width: 370px;
+  }
 
-  color: black;
   @media screen and(min-width: 1200px) {
     width: 448px;
     font-family: $font-family-base;
