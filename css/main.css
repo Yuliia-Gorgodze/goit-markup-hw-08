@@ -251,8 +251,8 @@ header {
 @media screen and (min-width: 768px) {
   .nav-element:hover .link::after,
   .nav-element:focus .link::after {
-    -webkit-transform: translateY(38px);
-            transform: translateY(38px);
+    -webkit-transform: translateY(36px);
+            transform: translateY(36px);
   }
 }
 
@@ -521,8 +521,8 @@ header {
     content: "";
     display: block;
     position: absolute;
-    -webkit-transform: translateY(38px);
-            transform: translateY(38px);
+    -webkit-transform: translateY(36px);
+            transform: translateY(36px);
     height: 4px;
     width: 100%;
     background-color: #2196f3;

@@ -64,7 +64,7 @@
       transform: translateY(8px);
     }
     @media screen and (min-width: 768px) {
-      transform: translateY(38px);
+      transform: translateY(36px);
     }
     @media screen and (min-width: 1200px) {
       transform: translateY(28px);
@@ -242,7 +242,7 @@
       content: "";
       display: block;
       position: absolute;
-      transform: translateY(38px);
+      transform: translateY(36px);
       height: 4px;
       width: 100%;
       background-color: $hover-color;
